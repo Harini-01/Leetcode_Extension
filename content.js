@@ -1,30 +1,24 @@
-function injectChatbotButton() {
-  // Locate the "Solved" status container
-  const solvedStatus = document.querySelector('.text-body.flex.flex-none.items-center.gap-1.py-1.5.text-text-secondary');
+window.onload = function() {
+  // Get the element using getElementsByClassName
+  console.log("LeetCode AI Helper Extension Loaded!");
 
-  if (solvedStatus) {
-    // Create the button element
-    const button = document.createElement('button');
-    button.textContent = 'Open AI Chatbot';
-    button.style.padding = '10px 20px';
-    button.style.backgroundColor = '#007bff';
-    button.style.color = 'white';
-    button.style.border = 'none';
-    button.style.borderRadius = '5px';
-    button.style.cursor = 'pointer';
-    button.style.marginBottom = '10px';  // Optional: add some spacing between the button and solved status
+  let targetElement = document.getElementsByClassName('.text-body.flex.flex-none.items-center.gap-1.py-1\\.5.text-text-secondary')[0];
 
-    // Add an event listener for the button click (for testing)
-    button.addEventListener('click', () => {
-      alert('Chatbot button clicked!');
-    });
+  if (targetElement) {
+      // Create the button
+      let button = document.createElement('button');
+      button.innerText = "AI Helper";
+      button.style.marginRight = "10px";
+      button.style.padding = "5px 10px";
+      button.style.borderRadius = "5px";
+      button.style.backgroundColor = "#007bff";
+      button.style.color = "white";
+      button.style.border = "none";
+      button.style.cursor = "pointer";
 
-    // Insert the button before the "Solved" status
-    solvedStatus.parentNode.insertBefore(button, solvedStatus);
+      // Insert before the target element
+      targetElement.parentNode.insertBefore(button, targetElement);
   } else {
-    console.log('Could not find the "Solved" status element.');
+      console.log("Target element not found.");
   }
-}
-
-// Run the function to inject the button when the page is loaded
-injectChatbotButton();
+};

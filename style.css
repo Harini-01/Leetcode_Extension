@@ -7,10 +7,11 @@ body {
     color: #00ffff;  /* Neon Cyan Text */
     text-align: center;
     padding: 20px;
-    width: 350px;  /* Increased popup width */
-    height: 400px; /* Increased popup height */
+    width: 500px;  /* Making the popup square */
+    height: 500px; /* Making the popup square */
     border: 3px solid #ff00ff; /* Neon Magenta Border */
     box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff; /* Glowing effect */
+    border-radius: 10px; /* Slight curve for cyberpunk effect */
 }
 
 /* Header Styling */
