@@ -1,16 +1,15 @@
-/* Cyberpunk Theme */
+/* Cyberpunk Green Theme */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 body {
     font-family: 'Orbitron', sans-serif;
     background-color: #0d0d0d;  /* Dark futuristic background */
-    color: #00ffff;  /* Neon Cyan Text */
+    color: #28C242;  /* Neon Green Text */
     text-align: center;
     padding: 20px;
-    width: 500px;  /* Making the popup square */
-    height: 500px; /* Making the popup square */
-    border: 3px solid #ff00ff; /* Neon Magenta Border */
-    box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff; /* Glowing effect */
+    width: 300px;  /* Making the popup square */
+    height: 300px; /* Making the popup square */
+    border: 3px solid #28C242; /* Neon Green Border */
     border-radius: 10px; /* Slight curve for cyberpunk effect */
 }
 
@@ -25,25 +24,25 @@ body {
 .logo {
     width: 50px;
     height: 50px;
-    filter: drop-shadow(0 0 5px #ff00ff);
+    filter: drop-shadow(0 0 5px #00ff00);
 }
 
 h2 {
     font-size: 22px;
-    color: #ff00ff;
-    text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
+    color: #28C242;
+    text-shadow: 0 0 5px #28C242, 0 0 10px #00aa00;
 }
 
 p {
     font-size: 14px;
-    color: #00ff99;
-    text-shadow: 0 0 5px #00ff99;
+    color: #28C242;
+    text-shadow: 0 0 5px #33ff33;
 }
 
-/* Cyberpunk Glowing Button */
+/* Cyberpunk Neon Green Glowing Button */
 button {
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    background: linear-gradient(45deg, #28C242, #33ff33);
     border: none;
     color: black;
     padding: 10px 20px;
@@ -53,11 +52,11 @@ button {
     transition: 0.3s;
     text-transform: uppercase;
     font-weight: bold;
-    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    box-shadow: 0 0 10px #28C242, 0 0 20px #33ff33;
 }
 
 button:hover {
-    background: linear-gradient(45deg, #00ffff, #ff00ff);
-    box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
+    background: linear-gradient(45deg, #28C242, #00ff00);
+    box-shadow: 0 0 20px #28C242, 0 0 40px #00aa00;
     transform: scale(1.05);
 }
