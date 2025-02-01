@@ -7,8 +7,8 @@ body {
     color: #28C242;  /* Neon Green Text */
     text-align: center;
     padding: 20px;
-    width: 300px;  /* Making the popup square */
-    height: 300px; /* Making the popup square */
+    width: 250px;  /* Making the popup square */
+    height: 250px; /* Making the popup square */
     border: 3px solid #28C242; /* Neon Green Border */
     border-radius: 10px; /* Slight curve for cyberpunk effect */
 }
@@ -24,13 +24,11 @@ body {
 .logo {
     width: 50px;
     height: 50px;
-    filter: drop-shadow(0 0 5px #00ff00);
 }
 
 h2 {
     font-size: 22px;
     color: #28C242;
-    text-shadow: 0 0 5px #28C242, 0 0 10px #00aa00;
 }
 
 p {
