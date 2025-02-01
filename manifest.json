@@ -2,12 +2,12 @@
     "manifest_version": 3,
     "name": "dsa_helper",
     "version": "1.0.0",
-    "author": "Harini",
+    "author": "Harini, Apoorva",
     "description": "An extension that can help you with dsa questions in ideation,debugging or in general whenever you get stuck",
     "permissions":["scripting",
                     "activeTab"],
     "host_permissions":[
-        "https://maang.in/problems/"
+        "https://leetcode.com/problemset/"
     ],
     "content_scripts":[
         {
@@ -15,7 +15,7 @@
                 "content.js"
             ],
             "matches":[
-                "https://maang.in/*"
+                "https://leetcode.com/problemset/*"
             ]
         }
     ],
