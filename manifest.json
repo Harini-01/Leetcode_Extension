@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "dsa_helper",
+    "version": "1.0.0",
+    "author": "Harini",
+    "description": "An extension that can help you with dsa questions in ideation,debugging or in general whenever you get stuck",
+    "permissions":["scripting",
+                    "activeTab"],
+    "host_permissions":[
+        "https://maang.in/problems/"
+    ],
+    "content_scripts":[
+        {
+            "js":[
+                "content.js"
+            ],
+            "matches":[
+                "https://maang.in/*"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
