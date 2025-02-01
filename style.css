@@ -1,0 +1,62 @@
+/* Cyberpunk Theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;  /* Dark futuristic background */
+    color: #00ffff;  /* Neon Cyan Text */
+    text-align: center;
+    padding: 20px;
+    width: 350px;  /* Increased popup width */
+    height: 400px; /* Increased popup height */
+    border: 3px solid #ff00ff; /* Neon Magenta Border */
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff; /* Glowing effect */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 0 5px #ff00ff);
+}
+
+h2 {
+    font-size: 22px;
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
+}
+
+p {
+    font-size: 14px;
+    color: #00ff99;
+    text-shadow: 0 0 5px #00ff99;
+}
+
+/* Cyberpunk Glowing Button */
+button {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
+    transform: scale(1.05);
+}
