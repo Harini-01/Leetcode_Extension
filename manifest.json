@@ -1,40 +1,17 @@
 {
     "manifest_version": 3,
-    "name": "Leetcode AI Doubt Solver",
-    "version": "1.0.0",
-    "author": "Harini, Apoorva",
-    "description": "An extension that can help you with dsa questions in ideation,debugging or in general whenever you get stuck",
-    "permissions":["scripting",
-                    "activeTab",
-                "storage"],
-    "host_permissions":[
-        "https://leetcode.com/problemset/"
-    ],
-    "content_scripts":[
-        {
-            "js":[
-                "content.js"
-            ],
-            "matches":[
-                "https://leetcode.com/problemset/*"
-            ],
-            "run_at": "document_end"
-        }
-    ],
+    "name": "LeetCode Button Injector",
+    "description": "Injects a button into the LeetCode page.",
+    "version": "1.0",
+    "permissions": ["activeTab"],
     "background": {
-        "service_worker": "background.js"
+      "service_worker": "background.js"
     },
-    "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "assets/icon.png",
-      "48": "assets/icon.png",
-      "128": "assets/icon.png"
-    }
-  },
-  "icons": {
-    "16": "assets/icon.png",
-    "48": "assets/icon.png",
-    "128": "assets/icon.png"
+    "content_scripts": [
+      {
+        "matches": ["https://leetcode.com/*"],
+        "js": ["content.js"]
+      }
+    ]
   }
-}
+  
